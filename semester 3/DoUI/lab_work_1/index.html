@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Язык программирования Си</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/theme.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="header">
+    <div class="wrapper">
+      <div class="navigation">
+        <ul class="nav">
+          <li><a href="#history">История создания</a></li>
+          <li><a href="#view_language">Краткий обзор языка</a></li>
+            <li><a href="#code_example">Примеры кода</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="wrapper">
+      <img class="logotip" src="image/logo.png" alt="logo" height="300px" >
+      <h1 class="title"> Язык программирования Си</h1>
+      <p class="description">История создания и краткий обзор языка Си с примерами кода.</p>
+      <a class="btn" href="https://ru.wikipedia.org/wiki/Си_(язык_программирования)" target="_blank">Узнать больше</a>
+    </div>
+  </div>
+
+<div class="page">
+  <section id="history">
+  <div class="wrapper">
+      <h2 class="h2">История создания</h2>
+      <p> <img src="image/Dennis_Ritchie.jpg" align="left" alt="Dennis Ritchie" height="200px"  vspace="10" hspace="15">
+        <p>Язык программирования Cи был создан Деннисом Ритчи из AT&T Bell Laboratories как язык программирования высокого уровня для разработки операционной системы UNIX. В настоящее время язык широко используется в различных областях. C особенно популярен у системных программистов, потому что позволяет писать программы просто и кратко.</p>
+          <p>Основной книгой, описывающая язык Cи, является книга Брайана Кернигана и Денниса Ритчи « Язык программирования Cи» (1978). Книги по языку Си писали Bolon (1986), Gehani (1984), Hancock and Krieger (1986), Harbison и Steele (1984) и многие другие.</p>
+            <p>В этом приложении мы попытаемся дать достаточно полное введение в Cи, так что те кто знаком с языками высокого уровня, такими как Pascal, PL/1 или Modula 2, смогут понять большую часть кода MINIX, приведенного в этой книге. Особенности Cи, которые не используются в MINIX, здесь не обсуждаются. Многочисленные тонкие моменты опущены. Акцент делается на чтении программ на Си, а не на написании кода.</p>
+  </div>
+</section>
+
+<section id="view_language">
+  <div class="wrapper">
+    <h2 class="h2">краткий обзор языка</h2>
+    <p>Си - язык программирования общего назначения, который очень известен своей эффективностью, экономичностью ресурсов и переносимостью на других программные платформы. Все эти преимущества обеспечивают качество разработки программного обеспечения, их быстроту и сравнительно небольшой размер. Программы написанные на Си по скорости работы можно даже сравнить с программами написанными на языке ассемблера.</p>
+    <p>Несмотря на то, что Си не включает в себя встроенные компоненты по работе с вводом-выводом, распределению памяти, управлению процессами, его системное окружение позволяет подключать объектные модули с такими функциями. Этого вполне достаточно, чтобы разрабатывать программное обеспечение абсолютно любого уровня, как небольшие программы, так и комплекс сложных программных систем.</p>
+    <p>Языковые особенности Си позволяют делать программы независимыми операционной системы или платформы.</p>
+    <p>Наиболее важными особенностями языка программирования Си являются:
+      <ol>
+      <li>обеспечение полного набора операторов структурного программирования</li>
+      <li>большой набор операций, в том числе операции прямой трансляции в машинный код</li>
+      <li>поддержка указателей на переменные и функции</li>
+    </ol></p>
+      <p>Указатели в Си позволяют создавать указатели и ссылаться на объекты таким же путем, как это делает компьютер. Арифметика указателей осуществляет доступ и манипуляции с адресами памяти. Си имеет препроцессор для обработки текстовых файлов перед компиляцией. Препроцессор может быть использован для любых текстовых файлов.</p>
+    <p>Таким образом, Си это гибкий язык программирования, позволяющий писать качественные программные продукты с высокой скоростью работы.
+    </p>
+    <p>Множество символов Си включает в себя малые и большие буквы английского алфавита и 10 арабских цифр:
+      <ul>
+      <li>большие английские буквы: A B C D E F G H I J K L M N O P Q R T U V W X Y Z</li>
+      <li>малые английские буквы: a b c d e f g h i j k l m n o p q r t u v w x y z</li>
+      <li>десятичные арабские цифры: 0 1 2 3 4 5 6 7 8 9</li>
+      </ul>
+    </p>
+    <p>Программы оперируют с различными данными, которые могут быть простыми и структурированными. Простые данные - это целые и вещественные числа, символы и указатели (адреса объектов в памяти). Целые числа не имеют, а вещественные имеют дробную часть. Структурированные данные - это массивы и структуры; они будут рассмотрены ниже</br>
+      <table class="t1" summary="Top 10 downloaded movies in 2011 using BitTorrent, in descending order, listing number of downloads and worldwide cinema grosses">
+        <caption>Типы данных языка Си</caption>
+        <thead>
+        <tr><th>Тип данных</th><th>Размер в байтах (битах)</th><th>Интервал измерения</th></tr>
+        </thead>
+        <tfoot>
+        <tr><th colspan="3"></th></tr>
+        </tfoot>
+        <tbody>
+        <tr><th>char</th><td>1 (8)</td><td> от -128 до 127</td></tr>
+        <tr><th>unsigned char</th><td>1 (8)</td><td> от 0 до 255</td></tr>
+        <tr><th>signed char</th><td>1 (8)</td><td> от -128 до 127</td></tr>
+        <tr><th>int</th><td>2 (16)</td><td> от -32768 до 32767</td></tr>
+        <tr><th>unsigned int</th><td>2 (16)</td><td> от 0 до 65535</td></tr>
+        <tr><th>signed int</th><td>2 (16)</td><td> от -32768 до 32767</td></tr>
+        <tr><th>short int</th><td>2 (16)</td><td> от -32768 до 32767</td></tr>
+        <tr><th>unsigned short int</th><td>2 (16)</td><td> от 0 до 65535</td></tr>
+        <tr><th>signed short int</th><td>2 (16)</td><td>от -32768 до 32767</td></tr>
+        <tr><th>long int</th><td>4 (32)</td><td> от -2147483648 до 2147483647</td></tr>
+        <tr><th>unsigned long int</th><td>4 (32)</td><td> от 0 до 4294967295</td></tr>
+        <tr><th>signed long int</th><td>4 (32)</td><td> от -2147483648 до 2147483647</td></tr>
+        <tr><th>float</th><td>4 (32)</td><td> от 3.4Е-38 до 3.4Е+38</td></tr>
+        <tr><th>double</th><td>8 (64)</td><td> от 1.7Е-308 до 1.7Е+308</td></tr>
+        <tr><th>long double</th><td>10 (80)</td><td> от 3.4Е-4932 до 3.4Е+4932</td></tr>
+        </tbody>
+        </table>
+
+    </p>
+    </div>
+  </section>
+  <section id="code_example">
+   <div class="wrapper">
+    <h2 class="h2">Примеры кода</h2>
+    <pre><code data-language="c">
+      /* Construct a ip/udp header for a packet, send packet */
+      int FAST_FUNC udhcp_send_raw_packet(struct dhcp_packet *dhcp_pkt,
+          uint32_t source_nip, int source_port,
+          uint32_t dest_nip, int dest_port, const uint8_t *dest_arp,
+          int ifindex)
+      {
+        struct sockaddr_ll dest_sll;
+        struct ip_udp_dhcp_packet packet;
+        unsigned padding;
+        int fd;
+        int result = -1;
+        const char *msg;
+      
+        fd = socket(PF_PACKET, SOCK_DGRAM, htons(ETH_P_IP));
+        if (fd < 0) {
+          msg = "socket(%s)";
+          goto ret_msg;
+        }
+      
+        memset(&dest_sll, 0, sizeof(dest_sll));
+        memset(&packet, 0, offsetof(struct ip_udp_dhcp_packet, data));
+        packet.data = *dhcp_pkt; /* struct copy */
+      
+        dest_sll.sll_family = AF_PACKET;
+        dest_sll.sll_protocol = htons(ETH_P_IP);
+        dest_sll.sll_ifindex = ifindex;
+        dest_sll.sll_halen = 6;
+        memcpy(dest_sll.sll_addr, dest_arp, 6);
+      
+        if (bind(fd, (struct sockaddr *)&dest_sll, sizeof(dest_sll)) < 0) {
+          msg = "bind(%s)";
+          goto ret_close;
+        }
+      
+        /* We were sending full-sized DHCP packets (zero padded),
+         * but some badly configured servers were seen dropping them.
+         * Apparently they drop all DHCP packets >576 *ethernet* octets big,
+         * whereas they may only drop packets >576 *IP* octets big
+         * (which for typical Ethernet II means 590 octets: 6+6+2 + 576).
+         *
+         * In order to work with those buggy servers,
+         * we truncate packets after end option byte.
+         */
+        padding = DHCP_OPTIONS_BUFSIZE - 1 - udhcp_end_option(packet.data.options);
+      
+        packet.ip.protocol = IPPROTO_UDP;
+        packet.ip.saddr = source_nip;
+        packet.ip.daddr = dest_nip;
+        packet.udp.source = htons(source_port);
+        packet.udp.dest = htons(dest_port);
+        /* size, excluding IP header: */
+        packet.udp.len = htons(UDP_DHCP_SIZE - padding);
+        /* for UDP checksumming, ip.len is set to UDP packet len */
+        packet.ip.tot_len = packet.udp.len;
+        packet.udp.check = inet_cksum((uint16_t *)&packet,
+            IP_UDP_DHCP_SIZE - padding);
+        /* but for sending, it is set to IP packet len */
+        packet.ip.tot_len = htons(IP_UDP_DHCP_SIZE - padding);
+        packet.ip.ihl = sizeof(packet.ip) >> 2;
+        packet.ip.version = IPVERSION;
+        packet.ip.ttl = IPDEFTTL;
+        packet.ip.check = inet_cksum((uint16_t *)&packet.ip, sizeof(packet.ip));
+      
+        udhcp_dump_packet(dhcp_pkt);
+        result = sendto(fd, &packet, IP_UDP_DHCP_SIZE - padding, /*flags:*/ 0,
+            (struct sockaddr *) &dest_sll, sizeof(dest_sll));
+        msg = "sendto";
+       ret_close:
+        close(fd);
+        if (result < 0) {
+       ret_msg:
+          bb_perror_msg(msg, "PACKET");
+        }
+        return result;
+      }
+      </code></pre>
+   </div>
+  </section>
+</div>
+
+<div class="footer">
+  <div class="wrapper">
+    <div class="spisok">
+      Используемые теги:
+    <ul>
+      <li>html</li>
+      <li>head</li>
+      <li>body</li>
+      <li>div</li>
+      <li>section</li>
+      <li>meta</li>
+      <li>title</li>
+      <li>link</li>
+      <li>p</li>
+      <li>a</li>
+
+      <li>img</li>
+      <li>footer</li>
+      <li>table</li>
+      <li>caption</li>
+      <li>thead</li>
+      <li>tr</li>
+      <li>th</li>
+      <li>tbody</li>
+      <li>tfoot</li>
+      <li>td</li>
+
+      <li>ol</li>
+      <li>ul</li>
+      <li>li</li>
+      <li>h1</li>
+      <li>h2</li>
+      <li>pre</li>
+      <li>code</li>
+      <li>Doctype</li>
+      <li>br/</li>
+      <li>script</li>
+    </ul>
+   Используемые css-свойства:
+    <ul>
+      <li>background-color</li>
+      <li>font-family</li>
+      <li>padding-left</li>
+      <li>padding-right</li>
+      <li>max-width</li>
+      <li>margin</li>
+      <li>display</li>
+      <li>list-style-type</li>
+      <li>font-weight</li>
+      <li>text-transform</li>
+
+      <li>margin-left</li>
+      <li>text-decoration</li>
+      <li>color</li>
+      <li>background-image</li>
+      <li>background-repeat</li>
+      <li>background-size</li>
+      <li>background-position</li>
+      <li>padding-bottom</li>
+      <li>padding-top</li>
+      <li>top</li>
+      
+      <li>right</li>
+      <li>font-size</li>
+      <li>border</li>
+      <li>text-align</li>
+      <li>line-height</li>
+      <li>text-indent</li>
+      <li>border-collapse</li>
+      <li>border-right</li>
+      <li>border-left</li>
+      <li>background</li>
+            
+      <li>columns</li>
+      <li>content</li>
+      <li>position</li>
+      <li>left</li>
+      <li>list-style</li>
+      <li>height</li>
+      <li>border-block</li> 
+      <li>flex</li>
+      <li>width</li>
+      <li>height</li>
+    </ul>
+
+  </div>
+  </div>
+  <p class="smile"><img src="image/smile.png" alt="smile"></p>
+</div>
+<script src="scripts/c.js" type="module"></script>
+<script src="scripts/rainbow-custom.min.js"></script>
+</body>
+</html>
