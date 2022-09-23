@@ -12,9 +12,6 @@ void print_names() {
 		<< " 5 - finished product" << endl << endl;
 }
 
-//1-dirty dishes
-//0-clean dishes
-//2-no dishes
 int main() {
 	setlocale(0, "");
 	int time = 1000;
