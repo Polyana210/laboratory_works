@@ -7,8 +7,8 @@ rules={'idE':'T e', 'numE':'T e', '(E':'T e',
        }
 fl = True
 
-#s = input().split()[::-1]
-s = 'id + num * ( num + id )'.split()[::-1]
+s = input().split()[::-1]
+#s = 'id + num * ( num + id )'.split()[::-1]
 while len(stack)!=0 and fl==True:
     if len(s)>0:
         si = s[-1]

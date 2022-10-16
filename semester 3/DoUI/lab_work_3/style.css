@@ -1,0 +1,35 @@
+body{
+  background-color: rgb(245, 245, 245);
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-weight: 500;
+  text-align: center;
+}
+
+legend{
+  font-weight: 700;
+}
+
+fieldset{
+  margin: 2%;
+  border-color: rgb(219, 223, 223);
+}
+
+.mobile{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  .dekstop{
+    display: none;
+  }
+  .mobile{
+    display:block;
+  }
+}
+
+.butt{
+  text-align: center;
+}

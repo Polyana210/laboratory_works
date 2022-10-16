@@ -5,49 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-  <form action="">
- <h2>Contact Us</h2>
-   <div class="col">
-      <div class="form-group">
-       <label>First Name</label>
-        <input type="text" value="7">
-      </div>
-    </div>
+<h1>РЕМОНТ НОУТБУКОВ</h1>
+<form action="" enctype="application/x-www-form-urlencoded" method="post">
+<fieldset class = "dekstop"><legend>Контактная информация</legend>
+<p><label>Ваше имя: <input type="text" placeholder=" Иван" /></p>
+<p><label>Телефон: <input type="tel" placeholder=" +375 ** *** ** **"/></label></p>
+<p><label>Модель ноутбука: <input type="text" placeholder=" Lenovo IdeaPad 3 15ITL6" /></label></p>
+<p><label>Электронная почта: <input type="email" placeholder=" abcde@mail.ru" /></label></p>
+</fieldset>
+<fieldset class = "mobile"> <legend>Контактная информация</legend>
+  <p><input  type="text" placeholder=" Имя" /></p>
+  <p><input  type="tel" placeholder=" Телефон" /></p>
+  <p><input  type="text" placeholder=" Модель ноутбука" /></p>
+  <p><input  type="email" placeholder=" email" /></p>
+  </fieldset>
+<fieldset><legend>Проблема</legend>
+<p><label> <input type="radio" value="small" /> Настройка сети, интернета и Wi-Fi;</label></p>
+<p><label> <input type="radio" value="medium" /> Ремонт компьютера</label></p>
+<p><label> <input type="radio" value="large" /> Чистка ноутбуков от пыли с заменой термопасты</label></p>
+<p><label> <input type="radio" value="medium" /> Замена матриц и других комплектующих в ноутбуках </label></p>
+<p><label> <input type="radio" value="large" /> Другое</label></p>
+<p><label>  <textarea placeholder="Опишите проблему:" style="height: 47px; width: 239px;" maxlength="1000" name="comments"></textarea></label></p>
 
-    <div class="col">
-      <div class="form-group">
-       <label>First Name</label>
-        <input type="tel">
-      </div>
-    </div>
-    <div class="form-group">
-      <label>First Name</label>
-       <input type="date" value="7">
-     </div>
-    <div class="col">
-       <div class="form-group">
-        <label>First Name</label>
-         <input type="checkbox">
-         <label>First Name</label>
-         <input type="checkbox">
-       </div>
-     </div>
+</fieldset>
+<fieldset><legend>Дополнительные услуги</legend>
+<p><label> <input name="topping" type="checkbox" value="bacon" /> Установка windows</label></p>
+<p><label> <input name="topping" type="checkbox" value="cheese" /> Обновление системы</label></p>
+<p><label> <input name="topping" type="checkbox" value="onion" /> Антивирус</label></p>
+<p><label> <input name="topping" type="checkbox" value="mushroom" /> Очистка от загрязнений</label></p>
+</fieldset>
+<p class="butt"><button> Отправить</button></p>
+</form>
+<form>
 
-     <div class="col">
-      <div class="form-group">
-       <label>First Name</label>
-        <input type="radio">
-      </div>
-    </div>
-    <div class="col">
-      <div class="form-group">
-       <label>First Name</label>
-        <input type="submit">
-      </div>
-    </div>
-
-</form>>
 </body>
 </html>
