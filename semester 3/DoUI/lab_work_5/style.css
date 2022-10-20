@@ -1,0 +1,94 @@
+.logo{
+  display: flex;
+}
+.citizen{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 0;
+  user-select: none;
+}
+
+.calc{
+  margin: 50px auto;
+  width: 250px;
+  height: 400px;
+  border: 10px solid rgb(120, 212, 255);
+  border-radius: 20px;
+  background: rgb(144, 173, 201);
+  color: #fdfdfd;
+  font-family: Arial;
+  padding: 18px;
+  box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calc-screen{
+  height: 80px;
+  border-radius: 5%;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-areas:
+   "a" 
+   "b";
+  justify-items: end;
+  align-items: end;
+  background: rgb(163, 157, 157);
+}
+.calc-screen p{
+  line-height: 1.5;
+  grid-area: b;
+  text-align: right;
+  font-size: 3.2rem;
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "ac of sqrt percent"
+    "mrc m-minus m-plus division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "ziro dot equal plus";
+    grid-gap: 7px;
+    justify-items: center;
+    color:#5f69f5;
+
+}
+.btn{
+  width: 55px;
+  height: 35px;
+  background: rgb(213, 231, 248);
+  border-radius: 20%;
+  text-align:center;
+  line-height: 35px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn.plus{
+    grid-area: plus;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.btn:hover{
+  filter:brightness(120%);
+}
+
+.btn:active{
+  filter:brightness(90%);
+}
+
+.btn.bg-red{
+  background: #b93737;
+  color:#fdfdfd;
+}
+.btn.bg-blue{
+  background: #5f69f5;
+  color:#fdfdfd;
+}

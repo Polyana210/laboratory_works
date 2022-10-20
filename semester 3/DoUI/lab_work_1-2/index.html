@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <link href="css/theme.css" rel="stylesheet" type="text/css">
+<link href="media-queries.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="header">
@@ -23,10 +24,26 @@
         </ul>
       </div>
     </div>
+  </div>      
+  <div class="navbar">
+    <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>  
+      <div class="logo1">
+      </div>
+      <div class="menu-items">
+        <li><a href="#history">История создания</a></li>
+        <li><a href="#view_language">Краткий обзор языка</a></li>
+      </div>
+    </div>
   </div>
   <div class="banner">
     <div class="wrapper">
-      <img class="logotip" src="image/logo.png" alt="logo" height="300px" >
+      <img class="logotip" src="image/logo.png" alt="logo" height="300px" max-width="30%">
       <h1 class="title"> Язык программирования Си</h1>
       <p class="description">История создания и краткий обзор языка Си с примерами кода.</p>
       <a class="btn" href="https://ru.wikipedia.org/wiki/Си_(язык_программирования)" target="_blank">Узнать больше</a>
@@ -37,7 +54,7 @@
   <section id="history">
   <div class="wrapper">
       <h2 class="h2">История создания</h2>
-      <p> <img src="image/Dennis_Ritchie.jpg" align="left" alt="Dennis Ritchie" height="200px"  vspace="10" hspace="15">
+      <p> <img class="fig" src="image/Dennis_Ritchie.jpg" align="left" alt="Dennis Ritchie" height="200px"  vspace="10" hspace="15">
         <p>Язык программирования Cи был создан Деннисом Ритчи из AT&T Bell Laboratories как язык программирования высокого уровня для разработки операционной системы UNIX. В настоящее время язык широко используется в различных областях. C особенно популярен у системных программистов, потому что позволяет писать программы просто и кратко.</p>
           <p>Основной книгой, описывающая язык Cи, является книга Брайана Кернигана и Денниса Ритчи « Язык программирования Cи» (1978). Книги по языку Си писали Bolon (1986), Gehani (1984), Hancock and Krieger (1986), Harbison и Steele (1984) и многие другие.</p>
             <p>В этом приложении мы попытаемся дать достаточно полное введение в Cи, так что те кто знаком с языками высокого уровня, такими как Pascal, PL/1 или Modula 2, смогут понять большую часть кода MINIX, приведенного в этой книге. Особенности Cи, которые не используются в MINIX, здесь не обсуждаются. Многочисленные тонкие моменты опущены. Акцент делается на чтении программ на Си, а не на написании кода.</p>
@@ -51,7 +68,7 @@
     <p>Несмотря на то, что Си не включает в себя встроенные компоненты по работе с вводом-выводом, распределению памяти, управлению процессами, его системное окружение позволяет подключать объектные модули с такими функциями. Этого вполне достаточно, чтобы разрабатывать программное обеспечение абсолютно любого уровня, как небольшие программы, так и комплекс сложных программных систем.</p>
     <p>Языковые особенности Си позволяют делать программы независимыми операционной системы или платформы.</p>
     <p>Наиболее важными особенностями языка программирования Си являются:
-      <ol>
+      <ol style="padding-left: 20px;">
       <li>обеспечение полного набора операторов структурного программирования</li>
       <li>большой набор операций, в том числе операции прямой трансляции в машинный код</li>
       <li>поддержка указателей на переменные и функции</li>
@@ -60,7 +77,7 @@
     <p>Таким образом, Си это гибкий язык программирования, позволяющий писать качественные программные продукты с высокой скоростью работы.
     </p>
     <p>Множество символов Си включает в себя малые и большие буквы английского алфавита и 10 арабских цифр:
-      <ul>
+      <ul style="padding-left: 20px;">
       <li>большие английские буквы: A B C D E F G H I J K L M N O P Q R T U V W X Y Z</li>
       <li>малые английские буквы: a b c d e f g h i j k l m n o p q r t u v w x y z</li>
       <li>десятичные арабские цифры: 0 1 2 3 4 5 6 7 8 9</li>
@@ -100,7 +117,7 @@
   <section id="code_example">
    <div class="wrapper">
     <h2 class="h2">Примеры кода</h2>
-    <pre><code data-language="c">
+    <pre class = "codee"><code data-language="c">
       /* Construct a ip/udp header for a packet, send packet */
       int FAST_FUNC udhcp_send_raw_packet(struct dhcp_packet *dhcp_pkt,
           uint32_t source_nip, int source_port,
