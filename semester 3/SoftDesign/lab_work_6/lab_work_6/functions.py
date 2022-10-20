@@ -25,14 +25,12 @@ def Task3(num):
     return res
 
 
-def Task4():
-    pass
+def Task4(*nums):
+  sum = 0
+  for n in nums:
+      sum += n
+  return sum
 
-def Task5():
-    pass
 
 
-#num1, num2 = int(input("Input num1: ")), int(input("Input num2: "))
-#print(NOD(num1, num2))
-#print(Task2([int(i) for i in input().split()]))
-print(*Task3(13))
+
