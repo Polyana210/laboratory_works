@@ -118,10 +118,10 @@ document.querySelector('.buttons').onclick = (event) => {
   if(event.target.classList.contains('plus-minus')){ calc.plus_minus(); return;}
   if (calc.sign === "") if(event.target.classList.contains('mrc')){ calc.mrc1(); return;}
   if (calc.sign !== "") if(event.target.classList.contains('mrc')){ calc.mrc2(); return;}
+
   out.textContent = '';
   // получаем кнопку
   const key = event.target.textContent;
-
   if (digit.includes(key)){
     if (calc.b ==='' && calc.sign === ""){
     calc.a +=key;
@@ -170,6 +170,6 @@ document.querySelector('.buttons').onclick = (event) => {
     calc.finish = true;
     calc.check_a();
     out.textContent = calc.a;
-    console.log("a",calc.a, 'b',calc.b, 's',calc.sign);;
+    console.log("a",calc.a, 'b',calc.b, 's',calc.sign);
   }
 }

@@ -19,5 +19,5 @@ function compare(str1, str2){
 }
 
 str1 = "hello"
-str2 = "privet"
+str2 = "ole"
 console.log(compare(str1, str2));

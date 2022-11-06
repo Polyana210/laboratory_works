@@ -23,5 +23,5 @@
   return result;
  }
 
-var array = [7, 3, 4, 9, 5, 2, 17];
+var array = [7, 3, 4, 9, 5, 8, 17];
 console.log(task(array));

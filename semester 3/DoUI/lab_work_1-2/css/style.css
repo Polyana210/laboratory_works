@@ -214,8 +214,9 @@ table.t1 {
   }
   
   .navbar {
+    
     width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    box-shadow: 0 1px 4px rgb(146, 161, 176);
   }
   
   .nav-container {
@@ -264,6 +265,7 @@ table.t1 {
   }
   
   .nav-container .hamburger-lines {
+    
     display: block;
     height: 26px;
     width: 32px;
@@ -281,7 +283,7 @@ table.t1 {
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: #ffffff;
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -299,9 +301,9 @@ table.t1 {
   }
   
   .navbar .menu-items {
+    background: rgba(255, 255, 255, 0.692);
     padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgb(255, 255, 255);
-    height: 100vh;
+    height: 300px;
     width: 100%;
     transform: translate(-150%);
     display: flex;
