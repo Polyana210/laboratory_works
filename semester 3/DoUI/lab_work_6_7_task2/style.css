@@ -1,0 +1,61 @@
+.rhombus{
+  margin-top:50px;
+  margin-left: 400px;
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+.tl{
+  border-right: 2px solid rgb(112, 110, 110);
+  border-bottom: 2px solid rgb(112, 110, 110);
+}
+
+.tr{
+  border-left: 2px solid rgb(112, 110, 110);
+  border-bottom: 2px solid rgb(112, 110, 110);
+}
+
+.dl{
+  border-right: 2px solid rgb(112, 110, 110);
+  border-top: 2px solid rgb(112, 110, 110);
+}
+
+.dr{
+  border-left: 2px solid rgb(112, 110, 110);
+  border-top: 2px solid rgb(112, 110, 110);
+}
+
+
+.game{
+  border: 1px solid  rgb(112, 110, 110);
+  background: rgb(224, 224, 224);  
+  cursor: pointer;
+  user-select: none;
+}
+
+.top{  
+  border-top: 3px solid rgb(112, 110, 110);
+}
+
+.bottom{  
+  border-bottom: 3px solid rgb(112, 110, 110);
+}
+.right{  
+  border-right: 3px solid rgb(112, 110, 110);
+}
+.left{  
+  border-left: 3px solid rgb(112, 110, 110);
+}
+
+.game:hover{
+  filter:brightness(120%);
+}
+
+.game:active{
+  filter:brightness(60%);
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  
+  <ul id="myUL" class="tasks__list">
+    <li class="text tasks__item">Hit the gym</li>
+    <li class="text tasks__item checked">Pay bills</li>
+    <li class="text tasks__item ">Meet George</li>
+    <li class="text tasks__item">Buy eggs</li>
+    <li class="text tasks__item">Read a book</li>
+    <li class="text tasks__item">Organize office</li>
+  </ul>
+ 
+<script src="scripts.js"></script>
+</body>
+</html>
