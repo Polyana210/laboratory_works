@@ -1,0 +1,16 @@
+// Task1
+javac Task1.java
+java Task1 2 3 3
+javac -cp .;junit.jar;hamcrest-core.jar ExpressionTestCase.java
+java -cp .;junit.jar;hamcrest-core.jar org.junit.runner.JUnitCore ExpressionTestCase
+
+// Task2
+javac Task2.java
+java Task2 2 0.0001
+jar cfe Task2.jar Task2 Task2.class
+java -jar Task2.jar 1 0.001
+javac -cp .;junit.jar;hamcrest-core.jar ExpressionTestCaseTask2.java
+java -cp .;junit.jar;hamcrest-core.jar org.junit.runner.JUnitCore ExpressionTestCaseTask2
+
+//Task3
+java -cp calc.jar InfixToPolizConverter a*a-b*b/(c*c+5) | java -cp calc.jar Calculator a=2 b=3 c=3
