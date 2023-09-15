@@ -1,0 +1,80 @@
+body {
+  padding: 2rem;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form {
+  margin-left: 30%;
+  margin-right: 30%;
+  background: rgb(225, 255, 255);
+  border-radius: 20px;
+  border: 2px solid rgb(136, 134, 134);
+  text-align: center;
+}
+
+.form_1{
+  display: block;
+}
+
+.input_1{
+  width: 90%;
+  margin: 1em;
+  padding:5px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(156, 155, 155);
+  font-size: 16px;
+}
+
+.input_11{
+  width: 60%;
+  padding:5px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(165, 237, 255);
+  font-size: 16px;
+}
+.input_12{
+  padding:5px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(165, 237, 255);
+  font-size: 16px;
+}
+.input_123{
+  padding:10px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(177, 195, 201);
+  font-size: 16px;
+}
+
+.but_form{
+  border-radius: 10px;
+  border: 1px solid rgb(156, 155, 155);
+  font-size: 16px;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+p{
+  font-size: 16px;
+}
+
+.logout{
+  font-size: 16px;
+}
+

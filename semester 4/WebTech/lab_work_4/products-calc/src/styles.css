@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin-top: 40px;
+  margin-left: 60px ;
+  margin-right: 60px ;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+button {
+  margin: 5px;
+}
+li {
+  list-style-type: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.inp{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.but{
+  width: 200px;
+  font-size: 20px;
+  height: 30px;
+}
+
+
+.spisok_name1{
+  font-size: 20px;
+}
+
+
+
+.task_name{
+  display: inline-block;
+  word-break: break-all;
+  width: 300px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.edit_task{
+  display: inline-block;
+  width: 140px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+
+.task_name_1{
+  display: inline-block;
+  width: 300px;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
